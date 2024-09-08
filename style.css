@@ -1,0 +1,188 @@
+/* CSS Styling For Home, About And Contact pages
+  which include Header, nav Bar, And Complete Footer */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Ariel, sans-serif;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background-image: url(screen.jpg);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 4%;
+  width: 20%;
+}
+
+.logo-img {
+  height: 75px;
+}
+
+.logo-container .title-style {
+  display: flex;
+  text-wrap: nowrap;
+  margin-left: 5%;
+  font-size: 28px;
+  text-decoration: none;
+  font-style: italic;
+  color: #282c3f;
+  cursor: pointer;
+}
+
+.nav-bar {
+  position: relative;
+  width: 70%;
+  padding: 5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.search_bar {
+  height: 40px;
+  min-width: 200px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.search_icon {
+  box-sizing: content-box;
+  height: 20px;
+  padding: 10px;
+  background-color: #f5f5f6;
+  color: #282c3f;
+  font-weight: 300;
+  border-radius: 4px 0 0 4px;
+}
+
+.search_input {
+  color: #696e79;
+  background-color: #f5f5f6;
+  flex-grow: 1;
+  height: 40px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+ul {
+  width: 60%;
+  height: 33px;
+  overflow: hidden;
+}
+
+ul li {
+  display: inline-block;
+  margin-left: 4%;
+  padding: 1%;
+}
+ul li a:hover {
+  color: white;
+}
+ul li a {
+  color: #282c3f;
+  text-decoration: none;
+  font-size: 18px;
+}
+#menuIcon {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .nav-bar {
+    position: relative;
+    display: block;
+    width: 60%;
+    display: none;
+  }
+  .nav-bar.navactive {
+    display: inline;
+  }
+  .search_bar {
+    position: relative;
+    width: 100%;
+    top: 80px;
+    z-index: 221;
+    left: 5%;
+  }
+
+  #menuIcon {
+    display: inline;
+    position: fixed;
+    margin-left: 88%;
+    float: right;
+    z-index: 221;
+    font-size: 25px;
+    padding: 2%;
+    border-radius: 4px;
+    border: 1px solid grey;
+    cursor: pointer;
+  }
+
+  .nav-bar ul {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 149, 0, 0.561);
+  }
+
+  .nav-bar ul li {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    top: 50px;
+    position: relative;
+    padding: 2%;
+  }
+  ul li:hover {
+    background: rgb(31, 31, 31);
+  }
+  ul li a {
+    display: block;
+    font-weight: 600;
+  }
+}
+
+footer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 25px 0;
+  margin: 0;
+  background: #000000;
+  color: aliceblue;
+  justify-content: space-evenly;
+}
+.con-det {
+  display: grid;
+}
+.con-det a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 0 0 15px;
+}
+.about-us {
+  display: grid;
+}
+
+.top-cat {
+  display: grid;
+}
+
+.pay-method {
+  display: grid;
+}
