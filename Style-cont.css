@@ -1,5 +1,4 @@
-/* CSS Styling For Contact Page  */
-.screen {
+CSS Styling For Contact Page .screen {
   width: 100%;
   height: 100;
   background-image: url(screen.jpg);
@@ -53,4 +52,17 @@ h1 {
   background: rgb(249, 249, 207);
   cursor: pointer;
   outline: 2px solid tomato;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .inputs {
+    width: 100%;
+  }
 }
