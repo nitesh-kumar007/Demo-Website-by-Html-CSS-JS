@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   display: grid;
-  background-image: url(screen.jpg);
+  background-image: url(/pics/screen.jpg);
   background-position: bottom;
 }
 .img-slider {
